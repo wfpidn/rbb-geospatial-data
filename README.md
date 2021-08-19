@@ -1,4 +1,6 @@
-# Introduction
+RBB Geospatial Data Repository
+
+## Introduction
 
 This repository intended to support WFP staff in Regional Bureau Bangkok (RBB) region in disaster preparedness and response activities. Generally it is a compilation of geospatial, earth observation (EO) data and product that might useful for disaster related analysis. Geospatial information provide a better picture for evidence-based decision making during disaster emergency response. 
 
@@ -14,13 +16,11 @@ All the data are stored in WFP Sharepoint and only accessible via WFP intranet n
 
 For further information about this repository or question on data availability and location in Sharepoint, please contact:
 
-!!! question
+**Benny Istanto**<br>
+[benny.istanto@wfp.org](mailto:benny.istanto@wfp.org)<br>
 
-    **Benny Istanto**<br>
-    [benny.istanto@wfp.org](mailto:benny.istanto@wfp.org)<br>
-
-    **Ruangdech Poungprom**<br>
-    [ruangdech.poungprom@wfp.org](mailto:ruangdech.poungprom@wfp.org)<br>
+**Ruangdech Poungprom**<br>
+[ruangdech.poungprom@wfp.org](mailto:ruangdech.poungprom@wfp.org)<br>
 
 ## Contact
 
