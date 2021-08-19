@@ -1,0 +1,99 @@
+site_name: WFP RBB Geospatial Data
+site_description: List of WFP RBB Geospatial Data Catalogue in Sharepoint
+site_url: "https://wfpidn.github.io/rbb-geospatial-data"
+repo_url: https://github.com/wfpidn/rbb-geospatial-data
+repo_name: wfpidn/rbb-geospatial-data
+
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/library
+    favicon: assets/images/favicon.png
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.critic
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - footnotes
+  - admonition
+  - pymdownx.tabbed
+  - pymdownx.keys
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      clickable_checkbox: false
+      custom_checkbox: true
+  - def_list
+
+nav:
+    - Introduction: index.md
+    - Datasets: 
+      - Earth Observation:
+        - Population and Settlements: datasets/earthobservation/population-settlements.md
+        - Weather and Climate: datasets/earthobservation/weather-climate.md
+        - Vegetation, Cropland and Land Use Land Cover (LULC): datasets/earthobservation/vegetation-cropland-lulc.md
+        - Nightlights: datasets/earthobservation/nightlights.md
+        - Terrain: datasets/earthobservation/terrain.md
+        - By Product: datasets/earthobservation/product-name.md
+      - Spatial Data Infrastructure:
+        - RBB-SDI: datasets/sdi/rbb_gis.md
+    - Products:
+      - Climate and Weather:
+        - Rainfall Anomaly: products/rainfall-anomaly.md
+        - Consecutive Dry and Wet: products/dry-wet-condition.md
+        - Standardized Precipitation Index: products/spi.md
+        - Temperature anomaly: products/temperature-anomaly.md
+        - Temperature Condition Index: products/tci.md
+      - Vegetation:
+        - Vegetation Indices Anomaly: products/vi-anomaly.md
+        - Vegetation Condition Index: products/vci.md
+        - Vegetation Health Index: products/vhi.md
